@@ -3,7 +3,7 @@
  box-sizing: border-box;
 }
 html{
-  height: 100%;
+  height: 100vh;
 }
 body{
   background-color: #a9dba783;
@@ -40,7 +40,8 @@ img{
 
 }
 
-h1{ color: #000000 ;}
+h1{color: #000000;
+}
 a{ 
   text-decoration: none !important;
 }
@@ -93,7 +94,6 @@ nav a:hover {
 }
 .circulos{
   list-style-type: circle;
-  ;
 }
 .datos{
   margin-top: 10%;
@@ -166,7 +166,8 @@ nav a:hover {
 }
 
 .pie-pagina {
-  position:relative ;
+  position:fixed ;
+  bottom: 0;
   margin-top: 5rem;
   width: 100%;
   height: 16%;
@@ -199,6 +200,7 @@ nav a:hover {
   margin: 10px;
   height: 10px;
 }
+
 .nav-menu{
   padding: 0%;
   z-index: 1;
@@ -230,7 +232,7 @@ html {
   touch-action: manipulation;
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: none;
-  user-scalable: no;
+  -ms-user-select:none;
 }
 .hide{
   font-size: 22px;
@@ -253,5 +255,15 @@ html {
   .hide {
     display: block;
     text-align: left;
+  }
+}
+@media screen (max-width:768px) {
+  .pie-pagina{
+    height: 100vh;
+  }
+}
+@media screen (min-width:768px) {
+  .pie-pagina{
+    height: 100vh;
   }
 }
